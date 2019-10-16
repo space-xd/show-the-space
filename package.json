@@ -1,0 +1,20 @@
+{
+  "name": "show-the-space",
+  "version": "1.0.0",
+  "description": "Space apps challenge 2019 team space-xd",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/space-xd/show-the-space.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/space-xd/show-the-space/issues"
+  },
+  "homepage": "https://github.com/space-xd/show-the-space#readme"
+}
