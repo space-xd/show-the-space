@@ -4,7 +4,7 @@
   "description": "Space apps challenge 2019 team space-xd",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/space-xd/show-the-space/issues"
   },
-  "homepage": "https://github.com/space-xd/show-the-space#readme"
+  "homepage": "https://github.com/space-xd/show-the-space#readme",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
 }
