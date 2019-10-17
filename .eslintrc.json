@@ -1,9 +1,10 @@
 {
     "env": {
         "browser": true,
-        "es6": true
+        "es6": true,
+        "jest/globals": true
     },
-    "extends": "standard",
+    "extends": ["standard", "plugin:jest/all"],
     "globals": {
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly"
@@ -16,8 +17,8 @@
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react",
+        "jest"
     ],
-    "rules": {
-    }
+    "rules": {}
 }

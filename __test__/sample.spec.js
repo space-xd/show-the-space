@@ -1,3 +1,3 @@
-test('sample test', () => {
-  expect(true).toBe(true);
-});
+describe(`${__filename}`, () => {
+  it.todo('sample test')
+})
