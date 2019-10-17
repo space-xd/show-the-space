@@ -21,4 +21,8 @@ jobs:
         node-version: ${{ matrix.node_version }}
 
     - name: npm lint
-      run: npx eslint .
+      run: |
+        npm install
+        npx eslint .
+      env:
+        NODE_ENV: development
