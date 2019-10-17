@@ -1,0 +1,28 @@
+name: "Check code style on pull_request to master"
+on: 
+  pull_request:
+    branches: 
+      - master
+
+jobs:
+  test:
+    name: Eslint check
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        node_version: ['12']
+        os: [ubuntu-latest]
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js ${{ matrix.node_version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node_version }}
+
+    - name: npm lint
+      run: |
+        npm install
+        npx eslint .
+      env:
+        NODE_ENV: development
