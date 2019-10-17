@@ -1,11 +1,27 @@
-on: [pull_request]
-name: "Check code style on pull_request"
+name: "Check code style on pull_request to master"
+on: 
+  pull_request:
+    branches: 
+      - master
 
 jobs:
-  wip:
-    name: "Eslint check"
-    runs-on: ubuntu-latest
+  test:
+    name: Test on node ${{ matrix.node_version }} and ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        node_version: ['10', '12']
+        os: [ubuntu-latest]
+
     steps:
-      - uses: gimenete/eslint-action@1.0
-    env:
-      NODE_ENV: 'development'
+    - uses: actions/checkout@v1
+    - name: Use Node.js ${{ matrix.node_version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node_version }}
+
+    - name: npm install, build and test
+      run: |
+        npm install
+        npm run build --if-present
+        npm test
