@@ -1,10 +1,9 @@
-# Add "approved" label to PRs with at least 1 approving reviewer
-on: pull_request
-name: eslint check all request
+on: [pull_request]
+name: "Set status on pull_request"
+
 jobs:
-  eslintcheck:
-    name: ESLint checks
+  wip:
+    name: "Set status"
     runs-on: ubuntu-latest
     steps:
-    - name: ESLint checks
-      uses: gimenete/eslint-action@1.0
+      - uses: wip/action@master
