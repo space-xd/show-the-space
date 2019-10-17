@@ -7,3 +7,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: gimenete/eslint-action@1.0
+    env:
+      NODE_ENV: 'development'
