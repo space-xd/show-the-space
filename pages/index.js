@@ -1,10 +1,7 @@
-import Globe from '../components/Globe'
-import AppLayout from '../components/AppLayout'
+import AppLayout from "../components/AppLayout";
 
-const Home = () => (
-  <AppLayout title="Home">
-    <Globe></Globe>
-  </AppLayout>
-)
+export default () => (
+    <AppLayout title="SpaceXD">
 
-export default Home
+    </AppLayout>
+);

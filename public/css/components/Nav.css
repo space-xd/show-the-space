@@ -1,9 +1,19 @@
 nav {
-	height: 50px;
-	width: 100%;
-	text-align: center;
+	height: 100%;
+	width: 50px;
 }
 
+li {
+	list-style-type: none;
+}
+ul {
+	font-size: 30px;
+	bottom: 0;
+	position: fixed;
+	width: 50px;
+}
+
+/* 
 ul {
 	display: flex;
 	justify-content: space-between;
@@ -14,12 +24,12 @@ nav>ul {
 }
 
 li {
-	display: flex;
 	padding: 6px 8px;
+	list-style-type: none;
 }
 
 a {
 	color: #067df7;
 	text-decoration: none;
 	font-size: 13px;
-}
+} */
