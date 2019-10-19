@@ -184,32 +184,18 @@
 	height: 62px;
 	left: 147px;
 	top: 200px;
-	overflow: visible;
 }
 
 #internalNav{
 	position: absolute;
 	width: 100px;
 	height: 100%;
-	right: 50px;
+	left: 40px;
 	background:black; 
+	padding: 8px 8px 8px 8px;
 }
 
-#main-globe { 
-    width: 800px;
-    margin: 0 auto;
-}
-
-/* #internal    {
-    width: 200px;
-    height: 400px;
-    background: red;
-    float: left;
-} */
-
-#page-wrap  {
-    width: 600px;
-    background: #ffffff;
-    height: 400px;
-    margin-left: 200px;
+.flexbox-container {
+	display: flex;
+	flex-direction: row;
 }
