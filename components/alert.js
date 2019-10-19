@@ -1,4 +1,6 @@
 import { Alert } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faFacebook} from "@fortawesome/free-brands-svg-icons";
 
 export default () => (
 	[
@@ -12,6 +14,7 @@ export default () => (
 		'dark',
 	].map((variant, idx) => (
 		<Alert key={idx} variant={variant}>
+			<FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon>
 			This is a {variant} alert—check it out!
         </Alert>
 	))
