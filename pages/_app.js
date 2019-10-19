@@ -1,5 +1,6 @@
 import React from 'react'
 import App from 'next/app'
+import Head from 'next/head'
 import "../public/css/style.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -18,7 +19,17 @@ class MyApp extends App {
 
   render() {
     const { Component, pageProps } = this.props
-    return <Component {...pageProps} />
+    return <>
+      <Head>
+        <script
+          async
+          key="worldwind"
+          custom-element="worldwind"
+          src="https://files.worldwind.arc.nasa.gov/artifactory/web/0.9.0/worldwind.min.js"
+        />
+      </Head>
+      <Component {...pageProps} />
+    </>
   }
 }
 

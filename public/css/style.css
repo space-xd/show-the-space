@@ -54,3 +54,8 @@
 	font-size: 13px;
 	color: #333;
 }
+:global(body) {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
+	  Helvetica, sans-serif;
+  }
