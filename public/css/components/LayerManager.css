@@ -4,10 +4,16 @@
     width: 400px;
     overflow: hidden;
 	overflow-y: scroll;
-	direction:rtl;
+    direction:rtl; 
+    margin: 15px;
 }
+
 .LayerManager::-webkit-scrollbar {
     -webkit-appearance: none;
+}
+
+.text-color {
+    color: white;
 }
 
 .LayerManager::-webkit-scrollbar-thumb {

@@ -20,7 +20,7 @@ export default (props) => {
 	const [layerState, setState] = useState(null);
 	return (
 		<div className="LayerManager">
-			<h1>{wms.capability.layers[0].title}</h1>
+			<h1 className="text-color">{wms.capability.layers[0].title}</h1>
 			<p>{wms.capability.layers[0].abstract}</p>
 			<CardList items={childLayers}></CardList>
 		</div>
