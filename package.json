@@ -3,9 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "node ssr-server.js",
+    "start": "node ssr-server.js",
     "build": "next build",
-    "start": "next start"
   },
   "engines" : { "node" : "12.12.0" },
   "engineStrict" : true,
