@@ -13,7 +13,14 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Head />
+        <Head>
+          <script
+            async
+            key="worldwind"
+            custom-element="worldwind"
+            src="https://files.worldwind.arc.nasa.gov/artifactory/web/0.9.0/worldwind.min.js"
+          />
+        </Head>
         <body>
           <Main />
           <NextScript />

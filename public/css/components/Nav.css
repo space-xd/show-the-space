@@ -1,9 +1,27 @@
-nav {
-	height: 50px;
-	width: 100%;
-	text-align: center;
+.my-nav {
+	height: 100%;
+	max-width: 50px;
 }
 
+ul.social-icons {
+	font-size: 30px;
+	top: 500px;
+	position: relative;
+	padding: 15px;
+	right: 10px;
+	/* position: fixed; */
+}
+
+ul.social-icons li {
+	list-style: none;	
+}
+
+.share-icon {
+	padding: 8px 8px 8px 8px;
+	color: white;
+	
+  }
+/* 
 ul {
 	display: flex;
 	justify-content: space-between;
@@ -14,12 +32,12 @@ nav>ul {
 }
 
 li {
-	display: flex;
 	padding: 6px 8px;
+	list-style-type: none;
 }
 
 a {
 	color: #067df7;
 	text-decoration: none;
 	font-size: 13px;
-}
+} */

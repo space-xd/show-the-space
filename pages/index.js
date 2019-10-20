@@ -1,10 +1,9 @@
-import Globe from '../components/Globe'
-import AppLayout from '../components/AppLayout'
+import AppLayout from "../components/AppLayout";
+import React from 'react'
+import Launch from '../components/launch'
 
-const Home = () => (
-  <AppLayout title="Home">
-    <Globe></Globe>
-  </AppLayout>
-)
-
-export default Home
+export default () => (
+    <AppLayout title="SpaceXD">
+        <Launch />
+    </AppLayout>
+);
