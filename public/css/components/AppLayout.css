@@ -1,6 +1,7 @@
 html,
 body,
-#__next {
+#__next,
+main{
 	display: flex;
 	height: 100%;
 	width: 100%;
@@ -9,5 +10,5 @@ body,
 .main {
 	height: 100%;
 	width: calc(100% - 50px);
-	background-color: #000000;
+	background: black;
 }

@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Link from 'next/link'
 import "../public/css/components/Nav.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookSquare, faTwitter, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import * as icons from "@fortawesome/free-solid-svg-icons";
 
 const links = [
   { href: 'https://facebook.com', icon: faFacebookSquare, label: 'facebook' },
@@ -15,45 +16,41 @@ const links = [
 
 const buttonStyle = {
   fontSize: '30px',
+  color: 'white'
 }
 const fontStyle = {
   fontStyle: 'normal',
   fontWeight: 'bold',
 }
-//faGlobeamericas
 
-const Nav = () => (
-  <div id="grad1">
-    <div id="mySidenav" className="sidenav">
-      <a href="javascript:void(0)" className="closebtn" onClick={(e) => closeNav(e)}>&times;</a>
-      <div>
-        <div id="SPACEXD">
-          <span>SPACE</span><span style={fontStyle}>XD</span>
+const Nav = () => {
+  const [sideNav, setSideNav] = useState(true);
+
+  return (
+    <div id="grad1" className="my-nav">
+      <div id="mySidenav" className={`sidenav ${sideNav ? 'open' : 'close'}`}>
+        <div>
+          <div id="SPACEXD">
+            <span>SPACE</span><span style={fontStyle}>XD</span>
+          </div>
+          <img src='./earth.png' className='earth-image'></img>
         </div>
-        <img src='./earth.png' className='earth-image'></img>
+        <div id="Group_17">
+          <span style={buttonStyle} onClick={(e) => setSideNav(false)}><button type="button" className="btn btn-primary" >Launch Earth</button></span>
+        </div>
       </div>
-      <div id="Group_17">
-        <span style={buttonStyle} onClick={(e) => closeNav(e)}><button type="button" className="btn btn-primary" >Launch Earth</button></span>
-      </div>
-    </div>
-    <ul>
-      {links.map(({ key, href, icon }) => (
-        <li key={key}>
-          <a href={href}>
-            <FontAwesomeIcon icon={icon}></FontAwesomeIcon>
-          </a>
-        </li>
-      ))}
-    </ul>
-    <span style={buttonStyle} onClick={(e) => openNav(e)}> <img src='./earth.png' className="logo"></img></span>
-  </div>
-)
-
-function openNav(e) {
-  document.getElementById("mySidenav").style.width = "100%";
+      <FontAwesomeIcon className="logo" icon={icons.faGlobeAmericas} onClick={(e) => setSideNav(true)}></FontAwesomeIcon>
+      <ul className="social-icons">
+        {links.map(({ key, href, icon }) => (
+          <li key={key}>
+            <a href={href}>
+              <FontAwesomeIcon className="share-icon" icon={icon}></FontAwesomeIcon>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div >
+  )
 }
 
-function closeNav(e) {
-  document.getElementById("mySidenav").style.width = "0";
-}
 export default Nav

@@ -1,11 +1,8 @@
-const style = {
-    width: '16rem',
-    height: '8rem'
-}
-export default () => (
-    <div className="card" style={style}>
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-        </div>
+import "../public/css/components/Card.css"
+
+export default (props) => (
+    <div className="my-card">
+        <img className="image" src={props.image}></img>
+        <h4 className="nav-text">{props.label}</h4>
     </div>
 );

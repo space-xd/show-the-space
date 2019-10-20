@@ -88,9 +88,15 @@
 	padding-top: 60px;
 	text-align:center;
 	background-color: black; /* For browsers that do not support gradients */
-	background-image: linear-gradient(#006FBD,#006FBD,#369BE5,#006BB7,#00000077); /* Standard syntax (must be last) */
+	background-image: linear-gradient(#006FBD,#00000077); /* Standard syntax (must be last) */
+  }
+  .open{
+	  width: 100%;
   }
 
+  .close{
+	  width: 0%;
+  }
   
   .sidenav a {
 	padding: 8px 8px 8px 32px;
@@ -119,17 +125,23 @@
   }
 
   #grad1 {
-	height: 100%;
-	width: 70px;
-	background-color: black; /* For browsers that do not support gradients */
-	background-image: linear-gradient(#006FBD,#006FBD,#369BE5,#006BB7,#00000077); /* Standard syntax (must be last) */
+	background: transparent linear-gradient(180deg, #006FBD 0%, #080912 100%) 0% 0% no-repeat padding-box;
+	box-shadow: 0px 3px 6px #00000077;
+	opacity: 1;
   } 
 
   .logo {
 	padding: 8px 8px 8px 8px;
 	height: 10%;
 	width: 80%;
-	display: flex
+	display: flex;
+	color: white;
+  }
+
+  .share-icon {
+	padding: 8px 8px 8px 8px;
+	color: white;
+	
   }
 
   .earth-image {
@@ -187,15 +199,59 @@
 }
 
 #internalNav{
-	position: absolute;
-	width: 100px;
 	height: 100%;
-	left: 40px;
-	background:black; 
-	padding: 8px 8px 8px 8px;
+	overflow: scroll;
 }
 
-.flexbox-container {
+
+.my-flex-container {
 	display: flex;
 	flex-direction: row;
+	height: 100%;
+	width: 100%;
+  }
+  
+.my-flex-item {
+	width: 32%;
+  }
+
+.my-flex-item-2 {
+	width: 68%;
 }
+
+.nav-text{
+	width: 50%;
+	height: 12px;
+	font: Bold 18px/22px Montserrat;
+	letter-spacing: 1.2px;
+	color: #FFFFFF;
+	opacity: 1;
+	position: relative;
+	text-align:left;
+	top: 50%;
+	transform: translateY(-50%);
+  	left: 20px;
+}
+  
+ .image{
+	width: 50%;
+	width: 200px;
+	min-height: 100px;
+	border-radius: 15%;
+	opacity: 1;
+	margin: 10px 0px;
+	position: relative;
+  	left: 10px;
+ } 
+
+ .white-earth{
+	top: 21px;
+	left: 18px;
+	width: 45px;
+	height: 53px;
+	text-align: left;
+	font: Regular 53px/64px FontAwesome;
+	letter-spacing: 0;
+	color: #FFFFFF;
+	opacity: 1;
+ }
