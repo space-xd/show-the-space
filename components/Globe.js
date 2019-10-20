@@ -20,11 +20,13 @@ function renderCanvas(mapId, layerManagerEl) {
 		.then(response => response.text())
 		.then(str => (new window.DOMParser()).parseFromString(str, "text/xml"))
 		.then((data) => {
-			return ReactDom.render((<LayerManager wms={new WorldWind.WmsCapabilities(data)} map={map} />), layerManagerEl)
+			return ReactDom.render((
+				<LayerManager wms={new WorldWind.WmsCapabilities(data)} map={map} />
+			), layerManagerEl)
 		})
 		.catch(error => console.log(`There was a failure retrieving the capabilities document: ${error}`));
 
-	
+
 	let timeStamp = Date.now();
 	const updateInterval = setInterval(function () {
 		timeStamp += 180 * 1000;

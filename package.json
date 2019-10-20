@@ -6,8 +6,10 @@
     "start": "node ssr-server.js",
     "build": "next build"
   },
-  "engines" : { "node" : "12.12.0" },
-  "engineStrict" : true,
+  "engines": {
+    "node": "12.12.0"
+  },
+  "engineStrict": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
     "@fortawesome/free-brands-svg-icons": "^5.11.2",
@@ -18,10 +20,12 @@
     "body-parser": "^1.19.0",
     "bootstrap": "^4.3.1",
     "express": "^4.17.1",
+    "lodash": "^4.17.15",
     "next": "9.1.1",
     "react": "16.10.2",
     "react-bootstrap": "^1.0.0-beta.14",
     "react-dom": "16.10.2",
+    "react-tooltip-lite": "^1.10.0",
     "uuid": "^3.3.3"
   }
 }

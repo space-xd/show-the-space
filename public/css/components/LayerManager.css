@@ -1,26 +1,27 @@
-.LayerManager{
-	/* z-index: 9999999; */
-	height: 100%;
-    width: 400px;
+.LayerManager {
+    /* z-index: 9999999; */
+    height: 95%;
+    width: 100%;
     overflow: hidden;
-	overflow-y: scroll;
-    direction:rtl; 
+    overflow-y: scroll;
+    direction: rtl;
     margin: 15px;
+    color: white;
+    background-color: #006EBC;
 }
 
 .LayerManager::-webkit-scrollbar {
     -webkit-appearance: none;
 }
 
-.text-color {
-    color: white;
+.LayerManager div {
+    direction: ltr;
 }
 
-.LayerManager::-webkit-scrollbar-thumb {
-    width: 100px;
-    background-color: #006EBC;
-    padding: 1px;
+.open.LayerManager{
+display: inline-block;
 }
-.LayerManager::-webkit-scrollbar:vertical {
-    width: 11px;
+
+.close.LayerManager{
+    display: none;
 }
