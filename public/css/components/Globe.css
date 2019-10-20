@@ -1,4 +1,17 @@
-canvas {
+.Globe {
+	height: 100%;
+	position: relative;
+}
+
+.Globe > canvas {
 	height: 100%;
 	width: 100%;
+	position: absolute;
+}
+
+.Globe > div{
+	height: 100%;
+	width: 20%;
+	z-index: 9;
+	position: absolute;
 }

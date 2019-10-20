@@ -14,32 +14,15 @@ const links = [
   return link
 })
 
-const buttonStyle = {
-  fontSize: '30px',
-  color: 'white'
-}
-const fontStyle = {
-  fontStyle: 'normal',
-  fontWeight: 'bold',
-}
 
 const Nav = () => {
-  const [sideNav, setSideNav] = useState(true);
-
   return (
-    <div id="grad1" className="my-nav">
-      <div id="mySidenav" className={`sidenav ${sideNav ? 'open' : 'close'}`}>
-        <div>
-          <div id="SPACEXD">
-            <span>SPACE</span><span style={fontStyle}>XD</span>
-          </div>
-          <img src='./earth.png' className='earth-image'></img>
-        </div>
-        <div id="Group_17">
-          <span style={buttonStyle} onClick={(e) => setSideNav(false)}><button type="button" className="btn btn-primary" >Launch Earth</button></span>
-        </div>
-      </div>
-      <FontAwesomeIcon className="logo" icon={icons.faGlobeAmericas} onClick={(e) => setSideNav(true)}></FontAwesomeIcon>
+    <div  className="my-nav grad1">
+      <a href="/">
+        <span>
+          <FontAwesomeIcon className="logo" icon={icons.faGlobeAmericas}></FontAwesomeIcon>
+        </span>
+      </a>
       <ul className="social-icons">
         {links.map(({ key, href, icon }) => (
           <li key={key}>

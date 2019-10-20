@@ -9,25 +9,9 @@
 }
 
 .my-card-list ul {
-    overflow: hidden;
-    overflow-y: scroll;
     height: 100%;
     width: 100%;
-    direction:rtl;
 }
-.my-card-list ul::-webkit-scrollbar {
-    -webkit-appearance: none;
-}
-
-.my-card-list ul::-webkit-scrollbar-thumb {
-    width: 100px;
-    background-color: #006EBC;
-    padding: 1px;
-}
-.my-card-list ul::-webkit-scrollbar:vertical {
-    width: 11px;
-}
-
 .my-card-list ul li {
     width: inherit;
     margin: 10px 0px;
