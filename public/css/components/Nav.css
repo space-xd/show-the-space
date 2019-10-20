@@ -13,31 +13,22 @@ ul.social-icons {
 }
 
 ul.social-icons li {
-	list-style: none;	
+	list-style: none;
 }
 
 .share-icon {
 	padding: 8px 8px 8px 8px;
 	color: white;
-	
-  }
-/* 
-ul {
-	display: flex;
-	justify-content: space-between;
-}
 
-nav>ul {
-	padding: 4px 16px;
 }
-
-li {
-	padding: 6px 8px;
-	list-style-type: none;
+.white-earth {
+	top: 21px;
+	left: 18px;
+	width: 45px;
+	height: 53px;
+	text-align: left;
+	font: Regular 53px/64px FontAwesome;
+	letter-spacing: 0;
+	color: #FFFFFF;
+	opacity: 1;
 }
-
-a {
-	color: #067df7;
-	text-decoration: none;
-	font-size: 13px;
-} */
