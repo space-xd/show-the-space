@@ -9,6 +9,7 @@ export default (props) => (
 			<link rel='icon' href='/favicon.ico' />
 		</Head>
 		<Nav />
+
 		<div className='main'>
 			{props.children}
 		</div>
