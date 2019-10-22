@@ -15,8 +15,7 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <script
-            async
-            crossOrigin
+            crossOrigin="true"
             key="worldwind"
             custom-element="worldwind"
             src="https://files.worldwind.arc.nasa.gov/artifactory/web/0.9.0/worldwind.min.js"
