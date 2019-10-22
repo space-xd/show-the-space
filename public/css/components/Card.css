@@ -1,6 +1,33 @@
-.my-card{
-    display: flex;
-    flex-direction: row;
-    height: 150px;
-    width: 400px
+.my-card {
+    font-size: 18px;
+    border: solid 1px #03406b;
+    background-color: #006EBC;
+    padding: 10px;
+    margin: 10px 10px 10px 0px;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.my-card p {
+    display: inline;
+    font: Bold 18px 22px;
+    letter-spacing: 1.2px;
+    color: #FFFFFF;
+}
+
+.react-tooltip-lite {
+    background: white;
+    color: black;
+    height: 40%;
+    width: 60%;
+    overflow: scroll;
+}
+
+.react-tooltip-lite-arrow {
+    border-color: white;
+}
+
+.infoTooltip {
+    width: 18px;
+    font-size: 30px;
 }

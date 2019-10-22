@@ -34,28 +34,14 @@
 }
 
 .nav-text {
-	width: 50%;
-	height: 12px;
 	font: Bold 18px/22px Montserrat;
 	letter-spacing: 1.2px;
 	color: #FFFFFF;
 	opacity: 1;
 	position: relative;
 	text-align: left;
-	top: 50%;
-	transform: translateY(-50%);
+	/* transform: translateY(-50%); */
 	left: 20px;
-}
-
-.image {
-	width: 50%;
-	width: 200px;
-	min-height: 100px;
-	border-radius: 15%;
-	opacity: 1;
-	margin: 10px 0px;
-	position: relative;
-	left: 10px;
 }
 
 .white-earth {
@@ -68,4 +54,8 @@
 	letter-spacing: 0;
 	color: #FFFFFF;
 	opacity: 1;
+}
+
+#__next-prerender-indicator {
+	display: none;
 }
