@@ -13,3 +13,4 @@ Web - Node, express, React, Next
 Deployment - Heroku
 
 Preview -
+![Alt text]( https://github.com/space-xd/show-the-space/blob/develop/space-xd-image.png?raw=true "Space XD")
